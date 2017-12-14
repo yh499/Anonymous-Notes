@@ -1,0 +1,15 @@
+<div id="smallbox">
+    <form name="myForm" #myForm="ngForm" method="post">
+    <label>Note:</label> 
+    <input required minlength="3" maxlength="30" type="text" [(ngModel)]="note" name="note">
+    <button (click)="onClick()" [disabled]="!myForm.form.valid">Submit</button>
+    <!-- error message appears -->
+    <span style="color:green" *ngIf="!note.valid">Invalid...</span><br><br>
+    </form>
+</div>
+<div id="noteBox">
+  
+  <p *ngFor="let note of notes">Comment: {{note.note}}&nbsp;&nbsp;&nbsp;{{note.createdAt | date : 'medium'}}</p>
+
+
+</div>

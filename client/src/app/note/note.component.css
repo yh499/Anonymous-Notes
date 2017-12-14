@@ -1,0 +1,14 @@
+#smallbox {
+     border: 1px solid black;
+     width: 750px; 
+     height: 70px;
+}
+
+#inputBox {
+     width: 400px; 
+     height: 50px;
+}
+
+#noteBox {
+    border: 1px solid black;
+}
